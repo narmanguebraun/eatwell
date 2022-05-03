@@ -19,7 +19,8 @@
   "homepage": "https://github.com/narmanguebraun/eatwell#readme",
   "dependencies": {
     "ejs": "^3.1.7",
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.16"
