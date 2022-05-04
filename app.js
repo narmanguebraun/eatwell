@@ -75,5 +75,10 @@ app.get('/about', function(req, res) {
 app.use(function(req, res) {
   res.render('404');
 });
+// 4 parameters for Express to understand is Error 500
+// next allows you to have multiple middlewares that work together
+app.use(function(error, req, res, next) {
+  res.render('500');
+});
 
 app.listen(3000);
