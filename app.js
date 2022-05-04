@@ -41,7 +41,7 @@ app.get('/restaurants/:id', function(req, res) {
     } // return to force to stop function execution
   }
 
-  res.render('404') // no need to add return. the function stops after this.
+  res.status(404).render('404') // no need to add return. the function stops after this.
   
 });
 
@@ -71,14 +71,14 @@ app.get('/confirm', function(req, res) {
 app.get('/about', function(req, res) {
   res.render('about');
 });
-
+// technically correct, add status to update res object
 app.use(function(req, res) {
-  res.render('404');
+  res.status(404).render('404');
 });
 // 4 parameters for Express to understand is Error 500
 // next allows you to have multiple middlewares that work together
 app.use(function(error, req, res, next) {
-  res.render('500');
+  res.status(500).render('500');
 });
 
 app.listen(3000);
