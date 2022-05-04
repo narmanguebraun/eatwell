@@ -1,10 +1,1 @@
-[
-  {
-    "id": "r1",
-    "name":"Suta",
-    "address":"Violant d’Hongria Reina d’Aragó 134, 08028 Barcelona",
-    "cuisine":"Japanese",
-    "website":"https://www.instagram.com/suto_barcelona/",
-    "description":"Gastronomy"
-  }
-]
+[{"id":"r1","name":"Suta","address":"Violant d’Hongria Reina d’Aragó 134, 08028 Barcelona","cuisine":"Japanese","website":"https://www.instagram.com/suto_barcelona/","description":"Gastronomy"}]
