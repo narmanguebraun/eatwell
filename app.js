@@ -38,8 +38,10 @@ app.get('/restaurants/:id', function(req, res) {
   for (const restaurant of storedRestaurants) {
     if (restaurant.id === restaurantId) {
       return res.render('restaurant-detail', { restaurant: restaurant });
-    } // return stops function execution
+    } // return to force to stop function execution
   }
+
+  res.render('404') // no need to add return. the function stops after this.
   
 });
 
